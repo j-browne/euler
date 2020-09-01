@@ -1,0 +1,45 @@
+define fact (n)
+{
+	prod = 1;
+	for (i = 2; i <= n; ++i)
+	  {
+		prod *= i;
+	  }
+	return prod;
+}
+
+f[0] = 1;
+f[1] = 1;
+f[2] = 2;
+f[3] = 6;
+f[4] = 24;
+f[5] = 120;
+f[6] = 720;
+f[7] = 5040;
+f[8] = 40320;
+f[9] = 362880;
+
+define factsum (m)
+{
+	sum = 0;
+	while (m != 0)
+	  {
+#		sum += fact (m%10);
+		sum += f[m%10];
+		m /= 10;
+	  }
+	return sum;
+}
+
+final = 0;
+for (j = 10; j < 2540160; ++j)
+  {
+	if (j == factsum(j))
+	  {
+		print "*", j, "\n"
+		final += j;
+	  }
+  }
+
+final
+quit

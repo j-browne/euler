@@ -1,0 +1,18 @@
+count = 0;
+
+num = 3;
+den = 2;
+
+for (i = 1; i < 1000; ++i)
+  {
+	den += num;
+	num = 2*den - num;
+
+	if (length(num) > length(den))
+	  {
+		count += 1;
+	  }
+  }
+
+count
+quit

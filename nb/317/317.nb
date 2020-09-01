@@ -1,0 +1,43 @@
+v0 = 20;
+
+g = 9.81;
+
+x0 = 100;
+
+
+
+y[x_] := If[v0^2/(2 g) - (g x^2)/(2 v0^2) + x0 > 0, 
+
+  v0^2/(2 g) - (g x^2)/(2 v0^2) + x0, 0]
+
+
+
+2 \[Pi] \!\(
+
+\*SubsuperscriptBox[\(\[Integral]\), \(0\), \(100\)]\(y[
+
+    r] r \[DifferentialD]r\)\)
+
+
+
+1.85653*10^6
+
+
+
+NumberForm[%, 11, ExponentFunction -> (If[-10 < # < 10, Null, #] &)]
+
+
+
+\!\(\*
+
+TagBox[
+
+InterpretationBox["\<\"1856532.8455\"\>",
+
+1.8565328455275737`*^6,
+
+AutoDelete->True],
+
+NumberForm[#, 11, 
+
+    ExponentFunction -> (If[-10 < # < 10, Null, #]& )]& ]\)

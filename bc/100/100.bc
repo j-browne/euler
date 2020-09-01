@@ -1,0 +1,20 @@
+nom=707106781186547
+den=1000000000000000
+start=1000000000000
+ans=0
+
+for (n=start; n<10*start && ans==0; ++n)
+{
+    if (n%10000==0)
+    {
+        print n, ", ", nb, "\n";
+    }
+    nb=n*nom/den+1;
+    if (2*(nb*nb-nb) == n*n-n)
+    {
+        ans = nb;
+    }
+}
+
+ans
+quit

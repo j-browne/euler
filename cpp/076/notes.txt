@@ -1,0 +1,5 @@
+found pattern:
+1,2,4,6,10,14,21,29,...
+looked up at http://oeis.org
+found answer:
+100 190569291

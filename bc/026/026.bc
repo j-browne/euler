@@ -1,0 +1,42 @@
+sc = 1000
+scale = sc
+
+define frac (d)
+{
+	scale = 0;
+	m = d%1;
+	scale = sc;
+	return m;
+}
+
+define cycle (d)
+{
+	base = frac (10^10/d);
+	if (base == 0)
+	  {
+		return 0;
+	  }
+	for (n = 1; n < sc ; ++n)
+	  {
+		if (frac(10^(10+n)/d) == base)
+		  {
+			return n;
+		  }
+	  }
+}
+
+index = 0;
+max = 0;
+for (i = 2; i < 1000; ++i)
+  {
+	c = cycle (i);
+	if (c > max)
+	  {
+		index = i;
+		max = c;
+	  }
+  }
+
+index
+/*max*/
+quit

@@ -1,0 +1,29 @@
+precis = 100
+
+define sum_of_digits (x)
+{
+	sum = 0;
+	while (x !=  0)
+    {
+		sum += x % 10;
+		x /= 10;
+	}
+	return sum;
+}
+
+ans = 0;
+
+for (i = 2; i < 100; ++i)
+{
+    scale = precis - 1;
+    s = sqrt (i);
+    sf = s * 10^precis;
+    scale = 0;
+    if (s*s != i)
+    {
+        ans += sum_of_digits (sf);
+    }
+}
+
+ans/1
+quit

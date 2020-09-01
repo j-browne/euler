@@ -1,0 +1,12 @@
+define fact(x)
+{
+	if (x <= 1)
+	  {
+		return (1);
+	  }
+	return (x * fact(x-1));
+}
+
+(fact(2 * 20))/(fact(20) * fact(20))
+
+quit

@@ -1,0 +1,15 @@
+cont = 1;
+count = 0;
+
+for (n=1; cont == 1; ++n)
+  {
+	cont = 0;
+	for (i = 9; length(i^n) == n && i > 0; --i)
+	  {
+		count += 1;
+		cont = 1;
+	  }
+  }
+
+count
+quit

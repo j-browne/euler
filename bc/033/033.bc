@@ -1,0 +1,35 @@
+scale = 10;
+
+define ten (d)
+{
+	scale = 0;
+	d /= 10;
+	scale = 10;
+	return d;
+}
+
+numprod = 1;
+denprod = 1;
+
+for (den = 10; den < 100; ++den)
+  {
+	for (num = 10; num < den; ++num)
+	  {
+		numten = ten (num);
+		numone = num - numten*10;
+		denten = ten (den);
+		denone = den - denten*10;
+
+		if (denone != 0 && (num%11 != 0 && den%11 != 0))
+		  {
+			if ((num/den == numten/denten && numone == denone) || (num/den == numten/denone && numone == denten) || (num/den == numone/denten && numten == denone) || (num/den == numone/denone && numten == denten))
+			  {
+				numprod *= num;
+				denprod *= den;
+			  }
+		  }
+	  }
+  }
+
+print numprod, "/", denprod, "=", numprod/denprod, "\n"
+quit
