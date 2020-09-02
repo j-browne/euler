@@ -1,3 +1,4 @@
+/*
 use std::collections::HashSet;
 use std::io::Write;
 
@@ -14,8 +15,10 @@ fn is_palindrome(n: u32) -> bool {
     }
     res
 }
+*/
 
 fn main() {
+/*
     let mut s = HashSet::<u32>::new();
     for i in 10..100 {
         for j in i..100 {
@@ -25,4 +28,5 @@ fn main() {
         }
     }
     println!("{}", s.iter().max().unwrap());
+*/
 }

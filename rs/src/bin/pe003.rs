@@ -1,4 +1,4 @@
-pub fn main() {
+fn main() {
     let mut i: i64 = 600851475143;
     let mut n = 2;
     loop {

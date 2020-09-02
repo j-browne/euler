@@ -1,4 +1,4 @@
-pub fn main() {
+fn main() {
     let mut i = 3;
     let mut res = 2;
     let mut primes = vec![2];

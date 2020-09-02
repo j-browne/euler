@@ -1,4 +1,4 @@
-pub fn main() {
+fn main() {
     let mut res = 0;
     let mut new = 1;
     let mut old = 0;
