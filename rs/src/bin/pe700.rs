@@ -9,7 +9,9 @@ fn main() {
 
     while A != 0 {
         let next = (curr + A) % B;
-        if curr == next { break }
+        if curr == next {
+            break;
+        }
         curr = next;
         if curr < min {
             min = curr;
