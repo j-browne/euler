@@ -12,14 +12,6 @@ fn main() {
             break num_blue;
         }
         num_blue += 1;
-
-        //        if num_total % 1_000_000 == 0 {
-        //            println!("{} {} {}",
-        //                num_total,
-        //                2 * (num_blue * (num_blue - 1)) as i128 - (num_total * (num_total - 1)) as i128,
-        //                2 * (num_blue * (num_blue - 1)) as i128 - ((num_total + 1) * (num_total + 2)) as i128,
-        //            );
-        //        }
     };
 
     println!("{}", res);

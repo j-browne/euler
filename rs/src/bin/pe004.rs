@@ -18,15 +18,15 @@ fn is_palindrome(n: u32) -> bool {
 */
 
 fn main() {
-/*
-    let mut s = HashSet::<u32>::new();
-    for i in 10..100 {
-        for j in i..100 {
-            if is_palindrome(i * j) {
-                s.insert(i * j);
+    /*
+        let mut s = HashSet::<u32>::new();
+        for i in 10..100 {
+            for j in i..100 {
+                if is_palindrome(i * j) {
+                    s.insert(i * j);
+                }
             }
         }
-    }
-    println!("{}", s.iter().max().unwrap());
-*/
+        println!("{}", s.iter().max().unwrap());
+    */
 }

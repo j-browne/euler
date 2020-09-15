@@ -6,3 +6,5 @@ authors = ["Justin Browne <jebdude89@gmail.com>"]
 edition = "2018"
 
 [dependencies]
+lazy_static = "*"
+prime_tools = "*"
