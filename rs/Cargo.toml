@@ -7,4 +7,7 @@ edition = "2018"
 
 [dependencies]
 lazy_static = "*"
+num-integer = "*"
+pbr = "*"
 prime_tools = "*"
+rayon = "*"
